@@ -1,0 +1,8 @@
+# Vim swap files
+*.swp
+*.swo
+# Backup files
+*_backup/
+# Node or other temp files (if you have them)
+node_modules/
+
