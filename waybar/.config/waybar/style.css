@@ -1,6 +1,6 @@
 /* 全局设置 */
 * {
-  font-family: "CaskaydiaCove Nerd Font", "Font Awesome 6 Free", "Font Awesome 6 Free Solid";
+  font-family: "Share Tech Mono Nerd Font","CaskaydiaCove Nerd Font", "Font Awesome 6 Free", "Font Awesome 6 Free Solid";
   font-weight: bold;
   font-size: 16px;
   color: #dcdfe1;
@@ -27,7 +27,33 @@
   border-width: 0px;
 }
 
-#clock,
+#clock {
+	margin-left: 10px;
+}
+
+/*#custom-idleinhibit {
+  background-color: rgba(15,27,53,0.9);
+  margin-top: 6px;
+  margin-left: 6px;
+  margin-right: 6px;
+  padding: 4px 6px;
+  border-radius: 10px;
+  color: #dcdfe1;
+}*/
+/*#custom-idleinhibit.on {*/
+#idle_inhibitor.activated {
+    font-size: 24px;
+    color: #e06c75; /* red when active */
+    margin-right: 10px;
+}
+
+/*#custom-idleinhibit.off {*/
+#idle_inhibitor.deactivated {
+    font-size: 24px;
+    color: #98c379; /* green when disabled */
+    margin-right: 10px;
+}
+
 #custom-power{
   background-color: rgba(15,27,53,0.9);
   margin-top: 6px; /* 与屏幕顶部留出距离 */
@@ -36,8 +62,8 @@
   padding: 4px 2px; /* 保持内部间距 */
   border-radius: 0 10px 10px 0;
   border-width: 0px;
+  font-size: 24px;
 }
-
 #network,
 #custom-lock{
   background-color: rgba(15,27,53,0.9);
@@ -64,7 +90,7 @@
   border-width: 0px;
 }
 
-#custpm-temperature.critical,
+#custom-temperature.critical,
 #pulseaudio.muted {
   color: #FF0000;
   padding-top: 0;
