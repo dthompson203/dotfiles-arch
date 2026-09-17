@@ -29,3 +29,6 @@ eval "$(zoxide init bash)"
 # fzf keybindings + completion
 [[ -f /usr/share/fzf/key-bindings.bash ]] && source /usr/share/fzf/key-bindings.bash
 [[ -f /usr/share/fzf/completion.bash ]] && source /usr/share/fzf/completion.bash
+
+# Created by `pipx` on 2026-09-17 03:34:18
+export PATH="$PATH:/home/themenace/.local/bin"

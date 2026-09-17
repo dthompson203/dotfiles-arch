@@ -1,5 +1,12 @@
 A documentation of my workflow and rice
 
+# Dolphin
+- Fix for mime types in ~/.local/share/applications/swayimg-carousel.desktop
+-- Also in ~/.local/share/applications/swayimg-carousel.desktop
+- Fix for terminal in Google Gemini AI
+-- Entries in ~/.config/kdeglobals general section = kitty
+
+
 # Waybar 
 - ChatGPT?
 - Apps (ROFI)?
