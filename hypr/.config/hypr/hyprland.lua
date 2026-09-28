@@ -372,10 +372,10 @@ hl.bind(mainMod .. " + " .. "P", hl.dsp.window.pseudo())
 -- I think the next two keybindss fix this manual reviewed issue. This was discovered when I switched to Lua
 
 -- Cycle focus through windows (Leaves positions alone)
-hl.bind(mainMod .. " + Tab", hl.dsp.window.cycle({ next = true }))
+-- Diabled by themenace > hl.bind(mainMod .. " + Tab", hl.dsp.window.cycle({ next = true }))
 
 -- Swap positions (Physically moves the window tiles)
-hl.bind(mainMod .. " + Shift + Tab", hl.dsp.swapnext())
+-- Disabled by themenace > hl.bind(mainMod .. " + Shift + Tab", hl.dsp.swapnext())
 
 
 
