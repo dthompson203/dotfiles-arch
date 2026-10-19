@@ -135,7 +135,8 @@
                         "shutdown": "shutdown now",
                         "reboot": "reboot",
                         "suspend": "systemctl suspend",
-                        "hibernate": "systemctl hibernate"
+                        "hibernate": "systemctl hibernate",
+			"logout": "hyprctl dispatch 'hl.dsp.exit()'"
                 }
   },
   "tray": {

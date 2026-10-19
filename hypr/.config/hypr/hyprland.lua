@@ -108,6 +108,8 @@ local browser = "firefox"
 
 --exec-once = hyprpaper
 
+--exec-once = hypridle
+
 --############################
 
 --## ENVIRONMENT VARIABLES ###
@@ -362,6 +364,8 @@ hl.bind(mainMod .. " + " .. "R", hl.dsp.exec_cmd("rofi -show drun"))
 
 hl.bind(mainMod .. " + " .. "P", hl.dsp.window.pseudo())
 
+hl.bind(mainMod .. " + " .. "L", hl.dsp.exec_cmd("swaylock -C ~/.config/swaylock/config"))
+
 -- dwindle
 
 --bind = $mainMod, J, togglesplit, # dwindle
@@ -537,8 +541,18 @@ hl.window_rule({
     },
 })
 
+hl.window_rule({
+
+name = "no-kitty-fullscreen",
+
+match = { class = "^kitty$" },
+
+fullscreen_state = 0,
+
+})
+
 -- Autostart
 hl.on("hyprland.start", function()
     hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
-    hl.exec_cmd("waybar & hyprpaper")
+    hl.exec_cmd("waybar & hyprpaper & hypridle")
 end)

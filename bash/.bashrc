@@ -25,7 +25,7 @@ PROMPT_COMMAND="history -a; history -n;$PROMPT_COMMAND"
 HISTSIZE=10000
 HISTFILESIZE=20000
 fastfetch
-eval "$(zoxide init bash)"
+eval "$(zoxide init --cmd cd bash)"
 # fzf keybindings + completion
 [[ -f /usr/share/fzf/key-bindings.bash ]] && source /usr/share/fzf/key-bindings.bash
 [[ -f /usr/share/fzf/completion.bash ]] && source /usr/share/fzf/completion.bash
