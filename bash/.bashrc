@@ -32,3 +32,8 @@ eval "$(zoxide init --cmd cd bash)"
 
 # Created by `pipx` on 2026-09-17 03:34:18
 export PATH="$PATH:/home/themenace/.local/bin"
+
+# Auto-start ssh-agent if not already running
+if [ -z "$SSH_AUTH_SOCK" ]; then
+   eval "$(ssh-agent -s)" > /dev/null
+fi
